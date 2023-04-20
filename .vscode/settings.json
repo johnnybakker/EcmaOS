@@ -1,0 +1,6 @@
+{
+	"rust-analyzer.cargo.target": "aarch64-unknown-none",
+	"rust-analyzer.check.allTargets": false,
+	"lldb.verboseLogging": true,
+	"rust-analyzer.inlayHints.closingBraceHints.enable": false
+}

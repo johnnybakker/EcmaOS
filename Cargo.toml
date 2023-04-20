@@ -1,0 +1,12 @@
+[package]
+name = "ecma-pi"
+version = "0.1.0"
+authors = ["Johnny bakker <johnnybakker1997@gmail.com>"]
+edition = "2021"
+features = ["BCM2835"]
+
+[profile.dev]
+panic="abort"
+
+[profile.release]
+panic="abort"

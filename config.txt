@@ -1,0 +1,3 @@
+core_freq_min=250
+program_usb_boot_mode=1
+kernel=kernel8.img

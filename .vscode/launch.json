@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Attach QEMU",
+			"type": "lldb",
+			"request": "custom",
+			"targetCreateCommands": [
+				"settings set plugin.process.gdb-remote.packet-timeout 5",
+				"target create ${workspaceFolder}/target/aarch64-unknown-none/debug/ecma-pi"
+			],
+			"processCreateCommands": [
+				"settings set plugin.process.gdb-remote.packet-timeout 5",
+				"gdb-remote 3333"
+			],
+			"exitCommands": [],
+			"initCommands": ["settings set plugin.process.gdb-remote.packet-timeout 5"],
+			"suppressMultipleSessionWarning": true
+		}
+	]
+}
